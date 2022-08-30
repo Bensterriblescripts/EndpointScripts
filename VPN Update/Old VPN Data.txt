@@ -1,0 +1,5 @@
+C:\Program Files (x86)\Sophos\Sophos SSL VPN Client\Uninstall.exe
+
+Active processes
+openvpn-gui.exe
+openvpnserv.exe

@@ -4,6 +4,10 @@ Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Office\ClickToRun\Configuration
 #Additional Toggles
 Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Office\ClickToRun\Configuration" -Name "UpdatesEnabled" -Value "True"
 Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Office\ClickToRun\Configuration" -Name "UpdateChannelChanged" -Value "True"
+
+#In case registry changes are slow
+Start-Sleep -s 4
+
 #Push Update
 cd "C:\Program Files\Common Files\Microsoft Shared\ClickToRun"
 .\OfficeC2RClient.exe /update user
